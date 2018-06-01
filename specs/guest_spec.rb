@@ -8,7 +8,7 @@ class GuestTest < MiniTest::Test
     @song1 = Song.new("It's my life")
     @song2 = Song.new("How will I know")
     @song3 = Song.new("Roxanne")
-    @guest1 = Guest.new("Graeme", 100)
+    @guest1 = Guest.new("Graeme", 300)
     @guest2 = Guest.new("Rod", 50)
     @guest3 = Guest.new("Emilie", 150)
   end
@@ -20,6 +20,7 @@ class GuestTest < MiniTest::Test
   def test_guest_has_money
     assert_equal(50, @guest2.wallet())
   end
+
 
 
 
