@@ -17,12 +17,16 @@ class Room
     @guests.delete(guest)
   end
 
-  def songs_length
+  def songs_length()
     return @songs.length()
   end
 
+  def guests_length()
+    return @guests.length()
+  end
 
   def add_song(song)
     @songs.push(song)
   end
+
 end
